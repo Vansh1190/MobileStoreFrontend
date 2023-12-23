@@ -1,17 +1,8 @@
 import React, { useState } from 'react';
-import styled from "styled-components"
-import Navbar from '../Components/Navbar';
 import Axios from 'axios';
 import { Routes } from '../constant';
-import BuyNowProductDetails from '../Components/BuyNowProductDetails';
 import { useNavigate } from 'react-router-dom';
 
-const LandingContainer = styled.div`
-padding: 4em;
-background: papayawhip;
-
-
-`
 
 export default function TrackOrder() {
     const [TrackingID, setTrackingID] = useState('')

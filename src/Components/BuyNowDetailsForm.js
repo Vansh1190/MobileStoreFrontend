@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react"
-import { Switch } from '@headlessui/react'
+import {  useState } from "react"
+
 import Axios from "axios"
 import { useNavigate, useParams } from "react-router-dom";
 import { Routes } from "../constant";
-import { AllCountries, CountryStates, SelectCountry, StateCities } from "../CustomFunctions/Address";
+import { AllCountries, CountryStates, StateCities } from "../CustomFunctions/Address";
 import { isEmpty } from "lodash";
 
 
@@ -12,10 +12,7 @@ export default function BuyNowForm() {
     const navigate = useNavigate();
     const { id } = useParams();
 
-    function classNames(...classes) {
-        return classes.filter(Boolean).join(' ')
-    }
-    const [agreed, setAgreed] = useState(false)
+
     const [Name, setName] = useState('')
     const [Phone, setPhone] = useState('')
     const [Error, setError] = useState({})

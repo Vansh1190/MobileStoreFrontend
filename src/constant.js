@@ -1,6 +1,6 @@
 export const Routes =  {
-    GetAllMobiles: 'http://localhost:80/allMobiles',
-    MobileDetails:'http://localhost:80/mobileDetails',
-    PlaceOrder:'http://localhost/placeOrder',
-    TrackOrder:'http://localhost/trackOrder',
+    GetAllMobiles: 'https://mobilestore-k41g.onrender.com/allMobiles',
+    MobileDetails:'https://mobilestore-k41g.onrender.com/mobileDetails',
+    PlaceOrder:'https://mobilestore-k41g.onrender.com/placeOrder',
+    TrackOrder:'https://mobilestore-k41g.onrender.com/trackOrder',
 }

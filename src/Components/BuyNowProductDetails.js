@@ -1,10 +1,9 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import Axios  from 'axios';
 import { useEffect, useState } from 'react';
 import { Routes } from '../constant';
 import { useParams } from 'react-router-dom';
 
-export default function BuyNowProductDetails({ index, OS, imgURL, memory, name, price, processor, type, _id }) {
+export default function BuyNowProductDetails() {
     const { id } = useParams();
     const [MobileSpecifications, setMobileSpecifications] = useState({} | null)
 

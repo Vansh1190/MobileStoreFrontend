@@ -1,17 +1,10 @@
-import { CheckIcon } from '@heroicons/react/20/solid'
 import Axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Routes } from '../constant';
 
-const includedFeatures = [
-    'Private forum access',
-    'Member resources',
-    'Entry to annual conference',
-    'Official member t-shirt',
-]
 
-export default function MobileDetails({ index, OS, imgURL, memory, name, price, processor, type, _id }) {
+export default function MobileDetails({  name, }) {
     const { id } = useParams();
     console.log(id)
     const [MobileSpecifications, setMobileSpecifications] = useState({} | null)
@@ -34,10 +27,10 @@ export default function MobileDetails({ index, OS, imgURL, memory, name, price, 
 
     return (
         <div className="bg-white py-0 sm:py-0">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-full px-6 lg:px-8">
                 {/* <div className="mx-auto mt-2 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none"> */}
-                <div className="p-6 px-1 sm:p-6 lg:flex-auto">
-                    <img src={(MobileSpecifications.imgURL == 'NA') ? 'https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s22-5g-2.jpg' : MobileSpecifications.imgURL}  alt="MobileIMG" />
+                <div className="p-6 px-1 sm:p-6  lg:flex-auto">
+                    <img  className='w-[52vw] sm:w-80 max-w-80  m-auto center' src={(MobileSpecifications.imgURL === 'NA') ? 'https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s22-5g-2.jpg' : MobileSpecifications.imgURL}  alt="MobileIMG" />
                     <div className="h-px mt-4 flex-full w-full bg-gray-100" />
                     <h3 className="text-xl font-bold tracking-tight text-gray-900">{MobileSpecifications.name}</h3>
                     <p className='text-sm'>{name}</p>

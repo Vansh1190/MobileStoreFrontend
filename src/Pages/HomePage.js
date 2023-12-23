@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import styled from "styled-components"
-import Navbar from '../Components/Navbar';
 import CardComponent from '../Components/CardComponent';
 import Axios from 'axios';
 import { Routes } from '../constant';
 
-const LandingContainer = styled.div`
-padding: 4em;
-background: papayawhip;
-`
+
 
 // ... (previous imports)
 
@@ -86,7 +81,6 @@ export default function HomePage() {
                         <option value={128}>128 GB</option>
                         <option value={256}>256 GB</option>
                         <option value={512}>512 GB</option>
-                        {/* Add more options as needed */}
                     </select>
 
                     <select
@@ -100,7 +94,6 @@ export default function HomePage() {
                         <option value={"128 GB"}>128 GB</option>
                         <option value={"256 GB"}>256 GB</option>
                         <option value={"512 GB"}>512 GB</option>
-                        {/* Add more options as needed */}
                     </select>
                     <div className="flex items-center">
                         <input
@@ -132,9 +125,7 @@ export default function HomePage() {
                         <option value="">Select Type</option>
                         <option value="SmartPhone">SmartPhone</option>
                         <option value="OtherType">OtherType</option>
-                        {/* Add more options as needed */}
                     </select>
-                    {/* Apply filter button */}
                     <div className='flex items-center justify-center'>
                         <button
                             className="bg-blue-500 px-4 py-2  text-white p-2 rounded"
