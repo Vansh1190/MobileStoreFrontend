@@ -1,6 +1,6 @@
 import Axios from 'axios';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Routes } from '../constant';
 
 
@@ -66,12 +66,12 @@ export default function MobileDetails({  name, }) {
                 </div>
                 <div className="fixed bottom-0 left-0">
                     <div className="rounded-2xl w-screen bg-gray-50 p-2 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center ">
-                            <a
-                                href={"/buy/" + id}
+                            <Link
+                                to={"/buy/" + id}
                                 className="block w-full rounded-md bg-indigo-600 px-3 py-4 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
                                 Buy Now
-                            </a>
+                            </Link>
                         </div>
                 </div>
             </div>

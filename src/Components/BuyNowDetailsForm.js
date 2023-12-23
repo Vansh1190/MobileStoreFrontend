@@ -180,6 +180,7 @@ export default function BuyNowForm() {
                         <div className="mt-2.5">
                             <input
                                 type="email"
+                                value={Email}
                                 onChange={(e) => { setEmail(e.target.value) }}
                                 name="email"
                                 id="email"
