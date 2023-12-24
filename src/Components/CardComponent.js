@@ -28,8 +28,8 @@ export default function CardComponent({index, imgURL, name, price, _id}) {
                 {/* <h3 className="text-2xl font-bold tracking-tight text-gray-900">Lifetime membership</h3> */}
                 <p className='text-sm'>{name}</p>
                 {/* <p className='text-sm font-medium'>₹ 1,20,000</p> */}
-                <span className='text-sm mr-2 font-medium'>₹{formattedPrice(price)}</span>
-                <span className='text-xs line-through font-medium'>₹{formattedPrice(price-25000)} </span> 
+                <span className='text-sm mr-2 font-medium'>₹{formattedPrice(price-25000)}</span>
+                <span className='text-xs line-through font-medium'>₹{formattedPrice(price)} </span> 
                 <span className='text-xs font-medium text-emerald-600'>9% off</span>
               </div>
             </div>
